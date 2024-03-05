@@ -1,0 +1,46 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: #333;
+    text-align: center;
+}
+
+#countdown-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px; /* Increased padding */
+    border-radius: 15px; /* Slightly larger border radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    font-family: monospace;
+}
+
+#countdown-title {
+    font-size: 3rem; /* Larger font size for the title */
+    margin-bottom: 25px; /* Increased bottom margin */
+}
+
+#countdown {
+    background: #fff; /* Assuming the time box has a white background */
+    border-radius: 15px;
+    padding: 20px 40px; /* Larger padding for the time box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+#countdown span {
+    display: inline-block;
+    font-size: 5rem; /* Significantly larger font size for the countdown numbers */
+    margin: 0 15px; /* Larger margins to handle the increased font size */
+    min-width: 140px; /* Increased width to handle the larger fonts without shifting */
+    text-align: center;
+}
+
+#milliseconds {
+    font-size: 3.5rem; /* Larger but not as large as the main time units */
+    color: #666;
+    min-width: 160px; /* Increased min-width for milliseconds */
+}

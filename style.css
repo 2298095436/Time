@@ -12,65 +12,44 @@ body, html {
 
 #countdown-container {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 30px; /* Increased padding */
-    border-radius: 15px; /* Slightly larger border radius */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    display: inline-block;
+    padding: 3vw; /* Adjusted for better responsiveness */
+    border-radius: 1.5vw;
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: monospace;
 }
 
 #countdown-title {
-    font-size: 3rem; /* Larger font size for the title */
-    margin-bottom: 25px; /* Increased bottom margin */
+    font-size: 4vw; /* Responsive font size */
+    margin-bottom: 2vw;
 }
 
 #countdown {
-    background: #fff; /* Assuming the time box has a white background */
-    border-radius: 15px;
-    padding: 20px 40px; /* Larger padding for the time box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping as needed */
+    justify-content: center;
+    background: #fff;
+    border-radius: 1.5vw;
+    padding: 2vw; /* Adjusted padding */
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.1);
 }
 
 #countdown span {
-    display: inline-block;
-    font-size: 5rem; /* Significantly larger font size for the countdown numbers */
-    margin: 0 15px; /* Larger margins to handle the increased font size */
-    min-width: 140px; /* Increased width to handle the larger fonts without shifting */
+    font-size: 5vw; /* Responsive font size */
+    margin: 1vw; /* Adjusted margin for spacing */
+    min-width: 14vw; /* Ensure enough space for each unit */
     text-align: center;
 }
 
-#milliseconds {
-    font-size: 3.5rem; /* Larger but not as large as the main time units */
-    color: #666;
-    min-width: 160px; /* Increased min-width for milliseconds */
+@media (max-width: 600px) {
+    #countdown span {
+        font-size: 3.5vw; /* 进一步减小字体大小 */
+    }
+    #milliseconds {
+        font-size: 3vw; /* 对毫秒进行特定的字体大小调整 */
+    }
 }
 
-/* Existing styles ... */
 
-/* Mobile styles */
-@media (max-width: 768px) {
-  #countdown-title {
-    font-size: 2rem; /* Smaller font size for smaller screens */
-  }
-
-  #countdown span {
-    font-size: 3rem; /* Smaller font size for the countdown numbers */
-    margin: 0.5rem; /* Smaller margins */
-    min-width: 80px; /* Adjust width for smaller screens */
-  }
-
-  #milliseconds {
-    font-size: 2rem; /* Adjust milliseconds font size */
-    min-width: 80px; /* Adjust width for smaller screens */
-  }
-
-  /* Adjust the container padding for smaller screens */
-  #countdown-container {
-    padding: 20px;
-  }
-
-  /* You may also want to adjust the padding of the time box */
-  #countdown {
-    padding: 15px 20px;
-  }
-}

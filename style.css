@@ -44,3 +44,33 @@ body, html {
     color: #666;
     min-width: 160px; /* Increased min-width for milliseconds */
 }
+
+/* Existing styles ... */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  #countdown-title {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+
+  #countdown span {
+    font-size: 3rem; /* Smaller font size for the countdown numbers */
+    margin: 0.5rem; /* Smaller margins */
+    min-width: 80px; /* Adjust width for smaller screens */
+  }
+
+  #milliseconds {
+    font-size: 2rem; /* Adjust milliseconds font size */
+    min-width: 80px; /* Adjust width for smaller screens */
+  }
+
+  /* Adjust the container padding for smaller screens */
+  #countdown-container {
+    padding: 20px;
+  }
+
+  /* You may also want to adjust the padding of the time box */
+  #countdown {
+    padding: 15px 20px;
+  }
+}
